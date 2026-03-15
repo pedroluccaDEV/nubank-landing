@@ -2,15 +2,7 @@ import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CardShowcase from './components/CardShowcase'
-import {
-  Products,
-  AppPreview,
-  Features,
-  Ecosystem,
-  Security,
-  CTA,
-  Footer,
-} from './components/Sections'
+import { Products, AppPreview, Features, Ecosystem, Security, CTA, Footer } from './components/Sections'
 
 export default function App() {
   const [dark, setDark] = useState(false)
@@ -21,7 +13,7 @@ export default function App() {
 
   return (
     <>
-      <Navbar dark={dark} toggleDark={() => setDark((d) => !d)} />
+      <Navbar dark={dark} toggleDark={() => setDark(d => !d)} />
       <main>
         <Hero />
         <CardShowcase />
